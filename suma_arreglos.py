@@ -1,3 +1,5 @@
+#esto es un comentario
+
 def suma_arreglos(arreglo1, arreglo2):
     if len(arreglo1) != len(arreglo2):
         raise ValueError("Los arreglos deben tener la misma longitud")
