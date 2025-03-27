@@ -1,4 +1,5 @@
 #esto es un comentario
+#esto es un segundo comentario
 
 def suma_arreglos(arreglo1, arreglo2):
     if len(arreglo1) != len(arreglo2):
