@@ -1,0 +1,49 @@
+[33mcommit c97e99d06c4992ca7024fa65bf3af03c5da947ea[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: clasesprofejhon <clasesprofejho@gmail.com.co>
+Date:   Wed Mar 26 19:48:46 2025 -0500
+
+    version 1, cambios iniciales
+
+[1mdiff --git a/suma_arreglos.py b/suma_arreglos.py[m
+[1mnew file mode 100644[m
+[1mindex 0000000..08f8c54[m
+[1m--- /dev/null[m
+[1m+++ b/suma_arreglos.py[m
+[36m@@ -0,0 +1,36 @@[m
+[32m+[m[32mdef suma_arreglos(arreglo1, arreglo2):[m
+[32m+[m[32m    if len(arreglo1) != len(arreglo2):[m
+[32m+[m[32m        raise ValueError("Los arreglos deben tener la misma longitud")[m
+[32m+[m[41m    [m
+[32m+[m[32m    resultado = [a + b for a, b in zip(arreglo1, arreglo2)][m
+[32m+[m[32m    return resultado[m
+[32m+[m
+[32m+[m[32mdef main():[m
+[32m+[m[32m    print("Aplicacion para la suma de dos arreglos")[m
+[32m+[m[41m    [m
+[32m+[m[32m    try:[m
+[32m+[m[32m        tamanio = int(input("Ingrese el tamano de los arreglos: "))[m
+[32m+[m[41m        [m
+[32m+[m[32m        arreglo1 = [][m
+[32m+[m[32m        arreglo2 = [][m
+[32m+[m
+[32m+[m[32m        print("Ingrese los elementos del primer arreglo:")[m
+[32m+[m[32m        for i in range(tamanio):[m
+[32m+[m[32m            valor = float(input(f"Elemento {i+1}: "))[m
+[32m+[m[32m            arreglo1.append(valor)[m
+[32m+[m
+[32m+[m[32m        print("Ingrese los elementos del segundo arreglo:")[m
+[32m+[m[32m        for i in range(tamanio):[m
+[32m+[m[32m            valor = float(input(f"Elemento {i+1}: "))[m
+[32m+[m[32m            arreglo2.append(valor)[m
+[32m+[m
+[32m+[m[32m        resultado = suma_arreglos(arreglo1, arreglo2)[m
+[32m+[m[32m        print("Resultado de la suma de los arreglos:", resultado)[m
+[32m+[m
+[32m+[m[32m    except ValueError as e:[m
+[32m+[m[32m        print("Error:", e)[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        print("Ha ocurrido un error inesperado:", e)[m
+[32m+[m
+[32m+[m[32mif __name__ == "__main__":[m
+[32m+[m[32m    main()[m
+\ No newline at end of file[m
